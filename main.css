@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+/*====================GENERAL STYLES=====================*/
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+
+}
+
+a {
+  color: #bd806e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/*===================HEADER STYLES===================*/
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.text {
+  background-color: hsla(100, 0%, 0%, .6);
+  width: 100%;
+  color: hsla(0, 0%, 100%, .9);
+  text-align: center;
+}
+
+.tagline {
+  font-family: 'Libre Baskerville', serif;
+  color: hsla(0, 0%, 100%, .9);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  margin: 1rem;
+}
+
+.first-hr {
+  width: 50%;
+}
+
+.headline {
+  font-size: 7rem;
+  color: #d2ba87;
+  font-family: 'Great Vibes', cursive;
+  margin: 2rem;
+}
+
+.byline {
+  margin: 0.75rem;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+.byline::before,
+.byline::after {
+  display: inline-block;
+  content: "";
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0.75rem;
+  background-color: #fff;
+}
+
+/*============MAIN CONTENT STYLES===================*/
+
+.main-sections {
+  width: 100vw;
+  padding-bottom: 1.5rem;
+}
+
+.grey-beige {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  background-size: cover;
+  color: #444349
+}
+
+.gold-dark {
+  background-color: hsla(100, 0%, 0%, .6);
+  color: #d2ba87;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.content {
+  line-height: 1.7;
+}
+
+.content,
+h2,
+h3 {
+  padding: 2rem;
+}
+
+img {
+  padding-bottom: 1.5rem;
+}
+
+/*=======MAIN CONTENT-LOCATIONS STYLES=======*/
+
+.locations-content {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.locations-parts {
+  padding-bottom: 1.5rem;
+}
+
+c .locations-parts {
+  text-align: center;
+  width: 100%;
+}
+
+.locations-image {
+  text-align: center;
+  width: 50%;
+}
+
+.locations-hr {
+  width: 90%;
+  height: 3px;
+  border-style: none;
+  background-color: #444349;
+  margin: 1.5rem;
+}
+
+.locations-hr last-child {
+  margin-bottom: 0;
+}
+
+.party {
+  padding-bottom: 0
+}
+
+/*===========MAIN CONTENT-PROGRAM STYLES===================*/
+
+.program-content {
+  width: 100%;
+  text-align: left;
+}
+
+.program-content p {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/*=============MAIN CONTENT-GIFTS============*/
+
+.gift-content {
+  width: 100%;
+  text-align: center;
+}
+
+.gift-content img {
+  width: 130px;
+}
+
+/*=============MAIN CONTENT-QUESTIONS AND ANSWERS==================*/
+
+.main-sections {
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.questions {
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+.faq-onetopic p.answer:last-child {
+  margin-bottom: 0;
+}
+
+.faq-onetopic::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+/*==================MAIN CONTENT-CONTACT=====================*/
+
+.contact-content p {
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.contact-content p:last-child {
+  margin-bottom: 0;
+}
+
+/*===============FOOTER STYLES===============*/
+
+.main-content {
+  min-height: calc(100vh - 50px);
+}
+
+footer {
+  color: white;
+  height: 50px;
+  background-color: #606060;
+  text-align: center;
+  padding: 3rem;
+  font-family: 'Mulish', sans-serif;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*****=========================DESKTOP VERSION==========================*****/
+
+@media (min-width:768px) {
+
+  .wrapper {
+    width: 60%;
+  }
+
+  /*MAIN CONTENT-LOCATIONS STYLES*/
+
+  .locations-content {
+    width: 100%;
+    flex-flow: row;
+  }
+
+  .locations-hr {
+    display: none;
+  }
+
+  /*MAIN CONTENT-PROGRAM STYLES*/
+
+  .program-content {
+    text-align: justify;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  /*MAIN CONTENT-QUESTIONS AND ANSWERS*/
+
+  .faq-onetopic::after {
+    display: none;
+  }
+
+  .faq-onetopic {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .faq-onetopic h4 {
+    text-align: left;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    min-height: 7vh;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
